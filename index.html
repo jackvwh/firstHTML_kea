@@ -14,26 +14,38 @@
 
 </head>
 
-    <body>
+  <body>
+    <h1><script src="app.js"></script>
     
-        <h1>My second website</h1>    
+      <h1>My second website</h1>  
 
-        <nav>This is my navigation</nav>
+      <aside class="nav">
+        <nav>
+          <a href="/html/">MIG</a> |
+          <a href="/css/">MIG</a> |
+          <a href="/js/">OGSÅ MIG</a> |
+          <a href="/python/">STADIG MIG</a></nav>
+      </aside>
+
   <br>
-      <a href="https://www.arla.dk/opskrifter/fastelavnsboller-med-creme/"><img src="images/fastboller.jpg" alt="FastelavnsBoller">Press the image or this for source</a>
-      
+
+    <div id="top_img">
+      <a href="https://www.arla.dk/opskrifter/fastelavnsboller-med-creme/"><img src="images/fastboller.jpg" alt="FastelavnsBoller">Press the image or this for source</a>      
+    </div>
+    
   <br>
+  <div class="main">
       <h2> MY FAVOURITE RECIPE </h2>
-
         <article id="first_p">
+          <header>
           <h2> FastelavnsBoller </h2>
             <p>
               Boller op, boller ned... Fastelavnsboller med vaniljecreme og marcipanremonce - eller hvad du ellers har lyst til! Fyld og pynt kan varieres efter smag og behag - fyld fx dine fastelavnsboller med Nutella, Dulce de leche, syltetøj, kirsebær, stykker af marcipanbrød eller hvad du kan finde på. Kun fantasien sætter grænser for fyld i fastelavnsboller. Følger du opskriften trin-for-trin, så er fastelavnsbollerne faktisk ret nemme at bage – også med børn i køkkenet. 
             </p>
+          </header>
         </article>
-
   <br>
-      <section>
+      <section class="recipe">
         <table id ="ingredients">
             <tr>
               <th>Dej</th>
@@ -133,10 +145,8 @@
                   <td>75</td>
                   <td>dl</td>
                 </tr>
-          </table>
-        </section>
-        <aside>
-          <table id="Metode">
+        </table>    
+        <table id="metode">
             <tr>
               <th>Dej</th>
             </tr>
@@ -189,15 +199,10 @@
                     </ol> 
                   </td>
                 </tr>
-          </table> 
-        </aside>      
-
-
-        <h1><script src="app.js"></script>
-
-         <h3> <footer style="text-align: center;">This is my website</footer></h3>
-              
-
-    </body>
-
+        </table> 
+      </section> 
+    </div>   
+        
+      <h3> <footer style="text-align: center;">This is my website</footer></h3>          
+  </body>
 </html>

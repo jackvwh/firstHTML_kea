@@ -8,28 +8,52 @@ table, td, th
 {
     border: 2px solid black;
     border-radius: 5px;
-}   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+th
+{
+    background-color: rgb(255, 249, 196);
+}
+/* .main
+{
+    display: flex;
+} */
+
+.nav
+{
+    display: flex;
+}
+.recipe
+{
+    display: flex;
+}
+#top_img
+{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid rgb(200, 128, 128);
+    margin: 0; 
+    float: inline-end;
+}
 
 #first_p 
 {
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: aqua;
+    background-color: rgb(255, 0, 60);
     width: 50%;
     /* border-radius: 5px; */
     /* float: inline-start; */
 }
 #ingredients
 {
-    width: 40%;
     background-color: aqua;
 
 }
-#Metode
+#metode
 {
     border: 2px solid black;
     border-radius: 10px;
-    width: 60%;
     background-color: aqua;
-
 }
