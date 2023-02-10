@@ -14,8 +14,13 @@ p
 }
 .topNav
 {
-    position: relative;
-    text-align: center;
+    position: fixed;
+    padding: 3vh;
+    font-size: 2em;
+}
+.topNav a
+{
+    padding-inline: 4vh;
 }
 .mainGrid
 {

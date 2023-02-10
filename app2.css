@@ -49,14 +49,13 @@ td
             font-size: 2.5vh;
             padding-top: 6vh;
         }
-    /* .websiteH1
-    {
-        grid-area: websiteH1;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 6em;
-    } */
 }
+@media (max-width: 900px) {
+    .recipe
+        {
+            flex-wrap: wrap;
+        }
+    }
 .websiteH1
 {
     position: relative; 
@@ -66,10 +65,6 @@ td
     text-decoration: underline;   
     text-align: center; 
 }
-/* .verticalNav
-{
-    text-align: center;
-} */
 .recipeHeaderH2
 {
     text-align: center;
@@ -83,21 +78,34 @@ td
 }
 .item1
 {
-    padding: 2vh; 
+    padding-inline: 5vh; 
+    padding-top: 5vh;
+    color: rgb(85, 225, 57);
+    font-size: 1.5em;
 }
 .item2
 {
-   padding: 2vh;
+   padding-inline: 5vh;
+   font-size: 1.5em;
+}
+.recipe
+{
+    display: flex;
+    padding-inline: 6vh;
 }
 .ingredients
 {
-    background-color: aqua;
-}
-.metode
-{
-    border: 2px solid black;
+    display: flex;
     background-color: aqua;
     border-radius: 20px;
+    font-size: 1.2em;
+}
+.method
+{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aqua;
+    font-size: 1.2em;
 }
 #migImg
 {
