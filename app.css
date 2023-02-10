@@ -82,7 +82,10 @@ p
 {
     grid-area: websiteH1;
     text-align: center;
+    padding-top: 4vh;
+    margin: 5;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f71313;
 }
 .verticalNav
 {
@@ -95,12 +98,15 @@ p
 .aside
 {
     grid-area: aside;
+    background-color: rgb(197, 142, 70);
+
 }
 .recipeHeaderH2
 {
     grid-area: recipeHeaderH2;
     text-align: center;
     font-size: 4em;
+    margin-top: 0;
 }
 .topImg
 {
@@ -112,26 +118,40 @@ p
 {
     grid-area: item1;
     padding: 2vh;
+    background-color: antiquewhite;
 }
 .item2
 {
     grid-area: item2;
     padding: 2vh;
+    background-color: antiquewhite;
+
 }
 .ingredients
 {
     grid-area: ingredients;
     padding: 1vh;
 }
-.ingredients tr
+.ingredients th
 {
-    border: 5px;
-    border-color: black;
+    background-color: rgb(197, 142, 70);
+}
+.ingredients td
+{
+    background-color: antiquewhite;
 }
 .method
 {
     grid-area: method;
     padding: 1vh;
+}
+.method th
+{
+    background-color: rgb(197, 142, 70);
+}
+.method td
+{
+    background-color: antiquewhite;
 }
 .migImg
 {
