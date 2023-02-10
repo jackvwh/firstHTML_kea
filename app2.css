@@ -20,33 +20,66 @@ td
 {
     background-color: aliceblue;
 }
+.topNav
+{
+    text-align: center;
+}
 .mainFlex
 {
+    background-image: url(images/handDonut3.jpg);
+    background-size: contain;
+    border: 5 px solid black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+@media (min-width: 700px) {
+    .mainFlex
+        {
+            margin-inline: 20vh;
+        }
+    .verticalNav
+        {
+            display: flex;
+        }
+    .verticalNav a
+        {
+            color: rgb(61, 235, 18);
+            font-size: 2.5vh;
+            padding-top: 6vh;
+        }
+    /* .websiteH1
+    {
+        grid-area: websiteH1;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 6em;
+    } */
 }
 .websiteH1
 {
     position: relative; 
-    text-align: right;
-    padding-right: 4vw;
-    margin: 0;
+    margin: 5vh;
     color: rgb(11, 97, 39);
     font-size: 2em;
-    text-decoration: underline;    
+    text-decoration: underline;   
+    text-align: center; 
 }
-.verticalNav
+/* .verticalNav
 {
     text-align: center;
-    align-content: space-between;
-}
+} */
 .recipeHeaderH2
 {
     text-align: center;
+    padding: 2vh;
+    font-size: 3em;
 }
 .topImg
 {
-   min-width: 50%;
+   padding: 0;
+   width: 100%;
 }
 .item1
 {
@@ -68,5 +101,6 @@ td
 }
 #migImg
 {
-    margin-left: 25vw;
+    margin-inline: 20vh;
+    width: 100%;
 }
