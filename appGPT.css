@@ -1,0 +1,117 @@
+/* I asked ChatGPT: make my css layout and design more modern */
+body 
+{
+    background-color: #ffebcd;
+    background-image: url(images/handDonut.jpg);
+    background-size: contain;
+    font-family: "Open Sans", sans-serif;
+  }
+  table, td, th 
+  {
+    border: 2px solid black;
+  }
+  p 
+  {
+    border: 2px solid black;
+    font-size: 1.2em;
+    padding: 1em;
+  }
+  .topNav 
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgba(255, 235, 205, 0.8);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .topNav a 
+  {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  } 
+  .topNav a:hover 
+  {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .mainGrid 
+  {
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em;
+    padding-top: 2.5rem;
+    grid-template-areas: "websiteH1" 
+                         "verticalNav" 
+                         "recipeHeaderH2" 
+                         "topImg" 
+                         "item1" 
+                         "item2" 
+                         "ingredients" 
+                         "method" 
+                         "migImg";
+    
+}
+ 
+@media (min-width: 700px) 
+{
+    .mainGrid {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: "websiteH1 websiteH1 aside" 
+                           "verticalNav recipeHeaderH2 aside" 
+                           "verticalNav topImg aside" 
+                           "verticalNav item1 aside" 
+                           "verticalNav item2 aside" 
+                           "ingredients method aside" 
+                           "ingredients method aside" 
+                           "migImg migImg migImg";
+    }
+    .verticalNav 
+    {
+      grid-area: verticalNav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f7f7f7;
+      padding: 1em;
+      border-radius: 5px;
+    }
+    .verticalNav a 
+    {
+      font-size: 1.2em;
+      color: #333;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .verticalNav a:hover {
+      background-color: #333
+    }
+    /* .item1, .item2 
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+    /* .recipeHeaderH2, .item1 
+    {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    } */
+}

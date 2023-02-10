@@ -42,10 +42,11 @@ td
     .verticalNav
         {
             display: flex;
+            flex-direction: column;
         }
     .verticalNav a
-        {
-            color: rgb(61, 235, 18);
+        {   
+            color: rgb(10, 38, 3);
             font-size: 2.5vh;
             padding-top: 6vh;
         }
