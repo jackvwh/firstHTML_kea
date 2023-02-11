@@ -50,19 +50,18 @@ td
             font-size: 2.5vh;
             padding-top: 6vh;
         }
-}
-@media (max-width: 900px) {
     .recipe
         {
-            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row !important;
         }
-    }
+}
 .websiteH1
 {
     position: relative; 
     margin: 5vh;
     color: rgb(11, 97, 39);
-    font-size: 2em;
+    font-size: 5vh;
     text-decoration: underline;   
     text-align: center; 
 }
@@ -70,7 +69,7 @@ td
 {
     text-align: center;
     padding: 2vh;
-    font-size: 3em;
+    font-size: 5vh;
 }
 .topImg
 {
@@ -92,7 +91,7 @@ td
 .recipe
 {
     display: flex;
-    padding-inline: 6vh;
+    flex-direction: column;
 }
 .ingredients
 {

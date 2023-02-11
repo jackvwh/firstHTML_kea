@@ -15,20 +15,16 @@ p
 .topNav
 {
     position: fixed;
-    padding: 3vh;
-    font-size: 2em;
-}
-.topNav a
-{
-    padding-inline: 4vh;
+    font-size: 1em;
 }
 .mainGrid
 {
     display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2vh;
     grid-template-areas:'websiteH1'
                         'verticalNav'
-                        'recipeHeaderH2'
-                        'topImg'
+                        'header'
                         'item1'
                         'item2'
                         'ingredients'
@@ -40,8 +36,8 @@ p
     {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas:'websiteH1 websiteH1 aside'
-                            'verticalNav recipeHeaderH2 aside'
-                            'verticalNav topImg aside'
+                            'verticalNav header aside'
+                            'verticalNav header aside'
                             'verticalNav item1 aside'
                             'verticalNav item2 aside'
                             'ingredients method aside'
@@ -71,19 +67,31 @@ p
             font-size: 6em;
         }
     .aside
-    {
-        background-color: rgb(231, 227, 224);
-        background-image: url(images/poo_favi.png);
-        background-size: contain;
-        border-radius: 20px;
-    }
+        {
+            background-color: rgb(231, 227, 224);
+            background-image: url(images/poo_favi.png);
+            background-size: contain;
+            border-radius: 20px;
+        }
+    .topNav
+        {
+            position: fixed;
+            padding: 3vh;
+            font-size: 2em;
+        }
+    .topNav a
+        {
+            padding-inline: 4vh;
+        }
+    /* .topImg
+        {
+            display: table;
+        } */
 }
 .websiteH1
 {
     grid-area: websiteH1;
     text-align: center;
-    padding-top: 4vh;
-    margin: 5;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #f71313;
 }
@@ -94,29 +102,37 @@ p
     flex-direction: column;
     position: relative;
     text-align: center;  
+    font-size: 1em;
 }
+.verticalNav a {
+    font-size: 1.5em;
+  }
 .aside
 {
     grid-area: aside;
     background-color: rgb(197, 142, 70);
 }
+.header
+{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
 .recipeHeaderH2
 {
     grid-area: recipeHeaderH2;
     text-align: center;
-    font-size: 4em;
+    font-size: 4vh;
     margin-top: 0;
 }
 .topImg
 {
     grid-area: topImg;
-    padding: 1vh;
-    float: inline-end;
+    width: 100%;
 }
 .item1
 {
     grid-area: item1;
-    padding: 2vh;
     background-color: antiquewhite;
 }
 .item2
@@ -155,6 +171,5 @@ p
 .migImg
 {
     grid-area: migImg;
-    width: 100%;
 }
 

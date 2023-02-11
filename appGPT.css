@@ -47,13 +47,10 @@ body {
   
   .mainGrid {
     display: grid;
-    grid-gap: 1em;
-    margin: 1em;
-    padding-top: 2.5rem;
+    row-gap: 2vh;
     grid-template-areas: "websiteH1" 
                          "verticalNav" 
-                         "recipeHeaderH2" 
-                         "topImg" 
+                         "header" 
                          "item1" 
                          "item2" 
                          "ingredients" 
@@ -65,9 +62,9 @@ body {
     .mainGrid {
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas: "websiteH1 websiteH1 aside" 
-                           "verticalNav recipeHeaderH2 aside" 
-                           "verticalNav topImg aside" 
-                           "item1 item1 aside" 
+                           "verticalNav header aside" 
+                           "verticalNav header aside" 
+                           "ingredients item1 aside" 
                            "ingredients item2 aside" 
                            "ingredients method aside" 
                            "ingredients method aside";
@@ -85,10 +82,11 @@ body {
   
     .verticalNav a {
       font-size: 1.2em;
+      align-content: space-between;
       color: #333;
       text-decoration: none;
       padding: 2em 1em;
-      margin-bottom: 1em;
+      margin-bottom: 10vh;
       background-color: #fff;
       border-radius: 5px;
       transition: all 0.3s ease;
@@ -96,7 +94,7 @@ body {
     }
   
     .verticalNav a:hover {
-      background-color: #333
+      background-color: #333;
     }
     /* .item1, .item2 
     {
@@ -118,6 +116,7 @@ body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #f71313;
+    margin-top: 12vh;
 }
 .verticalNav
 {
@@ -126,26 +125,32 @@ body {
     flex-direction: column;
     position: relative;
     text-align: center;  
-    height: 50vh;
 }
 .aside
 {
     grid-area: aside;
+    margin-top: 7vh;
     background-color: rgb(197, 142, 70);
     background-image: url(images/peace_favi.jpg);
     background-size: contain;
+}
+.header
+{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
 }
 .recipeHeaderH2
 {
     grid-area: recipeHeaderH2;
     text-align: center;
-    font-size: 4em;
+    font-size: 4vh;
     margin-top: 0;
 }
 .topImg
 {
     grid-area: topImg;
-    padding: 1vh;
+    width: 100%;
 }
 .item1
 {
@@ -158,7 +163,6 @@ body {
     grid-area: item2;
     padding: 2vh;
     background-color: antiquewhite;
-
 }
 .ingredients
 {
