@@ -60,7 +60,7 @@ body {
  
 @media (min-width: 700px) {
     .mainGrid {
-      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 0.3fr;
       grid-template-areas: "websiteH1 websiteH1 aside" 
                            "verticalNav header aside" 
                            "verticalNav header aside" 
@@ -132,7 +132,7 @@ body {
     margin-top: 7vh;
     background-color: rgb(197, 142, 70);
     background-image: url(images/peace_favi.jpg);
-    background-size: contain;
+    background-size: contain  ;
 }
 .header
 {

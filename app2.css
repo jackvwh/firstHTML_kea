@@ -5,6 +5,7 @@ body
     background-color: rgb(236, 174, 140);
     background-image: url(images/poo_favi.png);
     background-repeat: repeat-x;
+    background-size: 8vh;
 }
 table, td, th
 {
